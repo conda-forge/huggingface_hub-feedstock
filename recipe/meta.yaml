@@ -20,12 +20,14 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.6.0
   run:
     - filelock
-    - python >=3.6
+    - python >=3.6.0
     - requests
     - tqdm
+    # Only required for [py<38] but always include so this can be noarch: python
+    - importlib_metadata
 
 test:
   imports:
