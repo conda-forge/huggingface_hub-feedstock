@@ -38,6 +38,8 @@ test:
     - huggingface-cli --help
     - pytest tests
   requires:
+    - git
+    - git-lfs
     - pip
     - pytest
   source_files:
