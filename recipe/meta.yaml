@@ -26,6 +26,7 @@ requirements:
     - python >=3.6.0
     - requests
     - tqdm
+    - typing-extensions
     # Only required for [py<38] but always include so this can be noarch: python
     - importlib_metadata
 
