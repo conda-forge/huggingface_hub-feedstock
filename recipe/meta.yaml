@@ -24,6 +24,7 @@ requirements:
   run:
     - filelock
     - python >=3.6.0
+    - packaging >=20.9
     - requests
     - tqdm
     - typing-extensions
