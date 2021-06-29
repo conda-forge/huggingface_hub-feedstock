@@ -1,5 +1,5 @@
 {% set name = "huggingface_hub" %}
-{% set version = "0.0.12" %}
+{% set version = "0.0.13" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/huggingface/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 273ebf4c9e15b7280545703c353f42464fa1c8774dadf8e884e2f4ce5d2e8bc8
+  sha256: 007f144c3f0750ddb8a1b7eba8e62dfb1eaa9ade833d967c1c2bec4a862844ab
 
 build:
   number: 0
