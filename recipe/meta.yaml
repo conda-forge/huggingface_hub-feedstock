@@ -16,6 +16,8 @@ build:
   entry_points:
     - huggingface-cli=huggingface_hub.commands.huggingface_cli:main
   script: {{ PYTHON }} -m pip install . -vv
+  script_env:
+    - HUGGINGFACE_CO_STAGING=yes
 
 requirements:
   host:
@@ -38,7 +40,7 @@ test:
   commands:
     - pip check
     - huggingface-cli --help
-    - pytest tests
+    - pytest -sv ./tests/
   requires:
     - git
     - git-lfs
