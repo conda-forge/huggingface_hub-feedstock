@@ -1,5 +1,5 @@
 {% set name = "huggingface_hub" %}
-{% set version = "0.0.16" %}
+{% set version = "0.0.17" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/huggingface/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 3eee9918e815d2638a33845bae5bcf4a9feb05d24d0bdd28be9f4951349097f1
+  sha256: 4ccc27570f3893b45f9165b3b5ce3522b3f46b6d8c846dfe0cfe0b9f26b7f141
 
 build:
   number: 0
@@ -42,6 +42,7 @@ test:
     - huggingface-cli --help
     - pytest -sv ./tests/
   requires:
+    - datasets
     - git
     - git-lfs
     - pip
