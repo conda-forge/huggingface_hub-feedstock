@@ -42,6 +42,7 @@ test:
     - huggingface-cli --help
     - pytest -sv ./tests/
   requires:
+    - datasets
     - git
     - git-lfs
     - pip
