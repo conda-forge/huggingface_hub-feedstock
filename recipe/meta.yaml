@@ -24,9 +24,9 @@ requirements:
   run:
     - filelock
     - python >=3.6.0
+    - pyyaml
     - packaging >=20.9
     - requests
-    - ruamel.yaml ==0.17.16
     - tqdm
     - typing-extensions
     # Only required for [py<38] but always include so this can be noarch: python
