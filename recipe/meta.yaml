@@ -1,5 +1,5 @@
 {% set name = "huggingface_hub" %}
-{% set version = "0.1.0" %}
+{% set version = "0.1.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/huggingface_hub-{{ version }}.tar.gz
-  sha256: 821c8707cf7fe4b31cdccadb7ca4bac3affa47378e54426bde73edcbc5d10225
+  sha256: 195853756830200534f5d1117f76b1df537985c587c1e1b3ab233095493f9d65
 
 build:
   number: 0
@@ -28,7 +28,7 @@ requirements:
     - packaging >=20.9
     - requests
     - tqdm
-    - typing-extensions
+    - typing-extensions >=3.7.4.3
     # Only required for [py<38] but always include so this can be noarch: python
     - importlib_metadata
 
