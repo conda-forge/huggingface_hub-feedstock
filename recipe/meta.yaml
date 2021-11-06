@@ -28,7 +28,7 @@ requirements:
     - packaging >=20.9
     - requests
     - tqdm
-    - typing-extensions
+    - typing-extensions >=3.7.4.3
     # Only required for [py<38] but always include so this can be noarch: python
     - importlib_metadata
 
