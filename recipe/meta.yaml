@@ -1,5 +1,5 @@
 {% set name = "huggingface_hub" %}
-{% set version = "0.6.0" %}
+{% set version = "0.7.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/huggingface_hub-{{ version }}.tar.gz
-  sha256: f5109065222185d129933d44159e483a9e3378c577127d0281e4c921dfadbd23
+  sha256: 8154dc2fad84b32a4bca18372a647d9381ed8550a80b11050758357b8fcea639
 
 build:
   number: 0
@@ -24,13 +24,16 @@ requirements:
   run:
     - filelock
     - python >=3.7.0
-    - pyyaml
+    - pyyaml >=5.1
     - packaging >=20.9
     - requests
     - tqdm
     - typing-extensions >=3.7.4.3
     # Only required for [py<38] but always include so this can be noarch: python
     - importlib_metadata
+  run_constrained:
+    - fastai >=2.4
+    - fastcore >=1.3.27
 
 test:
   imports:
