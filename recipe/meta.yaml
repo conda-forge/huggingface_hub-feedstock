@@ -1,5 +1,5 @@
 {% set name = "huggingface_hub" %}
-{% set version = "0.7.0" %}
+{% set version = "0.8.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/huggingface_hub-{{ version }}.tar.gz
-  sha256: 8154dc2fad84b32a4bca18372a647d9381ed8550a80b11050758357b8fcea639
+  sha256: 75c70797da54b849f06c2cbf7ba2217250ee217230b9f65547d5db3c5bd84bb5
 
 build:
   number: 0
@@ -50,6 +50,25 @@ about:
   summary: Client library to download and publish models on the huggingface.co hub
   license: Apache-2.0
   license_file: LICENSE
+  description: |
+    The `huggingface_hub` is a client library to interact with the Hugging Face Hub. 
+    The Hugging Face Hub is a platform with over 35K models, 4K datasets, and 2K 
+    demos in which people can easily collaborate in their ML workflows. The Hub works 
+    as a central place where anyone can share, explore, discover, and experiment with 
+    open-source Machine Learning.
+
+    With `huggingface_hub`, you can easily download and upload models, extract useful 
+    information from the Hub, and do much more. Some example use cases:
+
+    - Downloading and caching files from a Hub repository.
+    - Creating repositories and uploading an updated model every few epochs.
+    - Extract metadata from all models that match certain criteria (e.g. models for `text-classification`).
+    - List all files from a specific repository.
+
+    PyPI: [https://pypi.org/project/huggingface-hub/](https://pypi.org/project/huggingface-hub/)
+
+  doc_url: https://huggingface.co/docs/huggingface_hub
+  dev_url: https://github.com/huggingface/huggingface_hub
 
 extra:
   recipe-maintainers:
@@ -57,3 +76,4 @@ extra:
     - osanseviero
     - adrinjalali
     - BastianZim
+    - sugatoray
