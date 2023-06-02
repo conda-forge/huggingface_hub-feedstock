@@ -1,5 +1,5 @@
 {% set name = "huggingface_hub" %}
-{% set version = "0.15.0" %}
+{% set version = "0.15.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/huggingface_hub-{{ version }}.tar.gz
-  sha256: 46cf4153452e325b73ee72f5975636da8656e79c9a8dc0fdc39baf7dfb104bc0
+  sha256: a61b7d1a7769fe10119e730277c72ab99d95c48d86a3d6da3e9f3d0f632a4081
 
 build:
   number: 0
@@ -75,6 +75,6 @@ extra:
   recipe-maintainers:
     - LysandreJik
     - osanseviero
-    - adrinjalali
+    - Wauplin
     - BastianZim
     - sugatoray
