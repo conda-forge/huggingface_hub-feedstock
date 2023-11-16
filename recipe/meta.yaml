@@ -20,11 +20,11 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8.0
+    - python >=3.8
   run:
     - fsspec >=2023.5.0
     - filelock
-    - python >=3.8.0
+    - python >=3.8
     - pyyaml >=5.1
     - packaging >=20.9
     - requests
