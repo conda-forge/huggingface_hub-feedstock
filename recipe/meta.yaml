@@ -1,5 +1,5 @@
 {% set name = "huggingface_hub" %}
-{% set version = "0.19.2" %}
+{% set version = "0.19.3" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/huggingface_hub-{{ version }}.tar.gz
-  sha256: 77dbb113e44265c32368d4caa7bd2ce16c06e59f16977f26528a977f2c4e9142
+  sha256: aa556c4d65a911955f20da7d85b29b17860c760a66d2f6c72ab131d0dfc29953
 
 build:
   number: 0
@@ -20,21 +20,16 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8.0
+    - python >=3.8
   run:
     - fsspec >=2023.5.0
     - filelock
-    - python >=3.8.0
+    - python >=3.8
     - pyyaml >=5.1
     - packaging >=20.9
     - requests
     - tqdm >=4.42.1
     - typing-extensions >=3.7.4.3
-  run_constrained:
-    - fastai >=2.4
-    - fastcore >=1.3.27
-    - InquirerPy ==0.3.4
-    - pydantic <2.0
 
 test:
   imports:
