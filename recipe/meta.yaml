@@ -21,6 +21,7 @@ requirements:
   host:
     - pip
     - python >=3.8
+    - setuptools
   run:
     - fsspec >=2023.5.0
     - filelock
