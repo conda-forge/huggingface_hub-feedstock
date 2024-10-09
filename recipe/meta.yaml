@@ -1,5 +1,5 @@
 {% set name = "huggingface_hub" %}
-{% set version = "0.25.1" %}
+{% set version = "0.25.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/huggingface_hub-{{ version }}.tar.gz
-  sha256: 9ff7cb327343211fbd06e2b149b8f362fd1e389454f3f14c6db75a4999ee20ff
+  sha256: a1014ea111a5f40ccd23f7f7ba8ac46e20fa3b658ced1f86a00c75c06ec6423c
 
 build:
   number: 0
@@ -23,6 +23,7 @@ requirements:
     - python >=3.8
     - setuptools
   run:
+    - typing_extensions >=3.7.4.3
     - fsspec >=2023.5.0
     - filelock
     - python >=3.8
