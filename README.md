@@ -167,6 +167,7 @@ Feedstock Maintainers
 * [@BastianZim](https://github.com/BastianZim/)
 * [@LysandreJik](https://github.com/LysandreJik/)
 * [@Wauplin](https://github.com/Wauplin/)
+* [@hanouticelina](https://github.com/hanouticelina/)
 * [@osanseviero](https://github.com/osanseviero/)
 * [@sugatoray](https://github.com/sugatoray/)
 
