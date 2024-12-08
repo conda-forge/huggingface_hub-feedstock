@@ -1,5 +1,5 @@
 {% set name = "huggingface_hub" %}
-{% set version = "0.26.3" %}
+{% set version = "0.26.5" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/huggingface_hub-{{ version }}.tar.gz
-  sha256: 90e1fe62ffc26757a073aaad618422b899ccf9447c2bba8c902a90bef5b42e1d
+  sha256: 1008bd18f60bfb65e8dbc0a97249beeeaa8c99d3c2fa649354df9fa5a13ed83b
 
 build:
   number: 0
