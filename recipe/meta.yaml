@@ -11,7 +11,7 @@ source:
   sha256: 1008bd18f60bfb65e8dbc0a97249beeeaa8c99d3c2fa649354df9fa5a13ed83b
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - huggingface-cli=huggingface_hub.commands.huggingface_cli:main
@@ -20,13 +20,13 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
     - setuptools
   run:
     - typing_extensions >=3.7.4.3
     - fsspec >=2023.5.0
     - filelock
-    - python >=3.8
+    - python >={{ python_min }}
     - pyyaml >=5.1
     - packaging >=20.9
     - requests
@@ -42,6 +42,7 @@ test:
     - huggingface-cli --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/huggingface/huggingface_hub
