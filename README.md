@@ -48,7 +48,7 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-huggingface_hub-green.svg)](https://anaconda.org/conda-forge/huggingface_hub) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/huggingface_hub.svg)](https://anaconda.org/conda-forge/huggingface_hub) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/huggingface_hub.svg)](https://anaconda.org/conda-forge/huggingface_hub) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/huggingface_hub.svg)](https://anaconda.org/conda-forge/huggingface_hub) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-huggingface__hub-green.svg)](https://anaconda.org/conda-forge/huggingface_hub) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/huggingface_hub.svg)](https://anaconda.org/conda-forge/huggingface_hub) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/huggingface_hub.svg)](https://anaconda.org/conda-forge/huggingface_hub) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/huggingface_hub.svg)](https://anaconda.org/conda-forge/huggingface_hub) |
 
 Installing huggingface_hub
 ==========================
