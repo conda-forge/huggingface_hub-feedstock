@@ -169,5 +169,6 @@ Feedstock Maintainers
 * [@Wauplin](https://github.com/Wauplin/)
 * [@hanouticelina](https://github.com/hanouticelina/)
 * [@osanseviero](https://github.com/osanseviero/)
+* [@setu4993](https://github.com/setu4993/)
 * [@sugatoray](https://github.com/sugatoray/)
 
