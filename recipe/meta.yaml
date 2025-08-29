@@ -11,10 +11,14 @@ source:
   sha256: a4228daa6fb001be3f4f4bdaf9a0db00e1739235702848df00885c9b5742c85c
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - huggingface-cli=huggingface_hub.commands.huggingface_cli:main
+    - hf=huggingface_hub.cli.hf:main
+    # Note: This cannot be tested out of the box since it requires `mcp` and `typer` as
+    # additional optional dependencies.
+    - tiny-agents=huggingface_hub.inference._mcp.cli:app
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -41,6 +45,9 @@ test:
   commands:
     - pip check
     - huggingface-cli --help
+    - huggingface-cli env
+    - hf --help
+    - hf env
   requires:
     - pip
     - python {{ python_min }}
@@ -51,13 +58,13 @@ about:
   license: Apache-2.0
   license_file: LICENSE
   description: |
-    The `huggingface_hub` is a client library to interact with the Hugging Face Hub. 
-    The Hugging Face Hub is a platform with over 35K models, 4K datasets, and 2K 
-    demos in which people can easily collaborate in their ML workflows. The Hub works 
-    as a central place where anyone can share, explore, discover, and experiment with 
+    The `huggingface_hub` is a client library to interact with the Hugging Face Hub.
+    The Hugging Face Hub is a platform with over 2M models, 500K datasets, and 200K
+    demos in which people can easily collaborate in their ML workflows. The Hub works
+    as a central place where anyone can share, explore, discover, and experiment with
     open-source Machine Learning.
 
-    With `huggingface_hub`, you can easily download and upload models, extract useful 
+    With `huggingface_hub`, you can easily download and upload models, extract useful
     information from the Hub, and do much more. Some example use cases:
 
     - Downloading and caching files from a Hub repository.
