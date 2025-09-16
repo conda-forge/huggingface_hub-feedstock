@@ -14,7 +14,7 @@ Development: https://github.com/huggingface/huggingface_hub
 Documentation: https://huggingface.co/docs/huggingface_hub
 
 The `huggingface_hub` is a client library to interact with the Hugging Face Hub.
-The Hugging Face Hub is a platform with over 35K models, 4K datasets, and 2K
+The Hugging Face Hub is a platform with over 2M models, 500K datasets, and 200K
 demos in which people can easily collaborate in their ML workflows. The Hub works
 as a central place where anyone can share, explore, discover, and experiment with
 open-source Machine Learning.
