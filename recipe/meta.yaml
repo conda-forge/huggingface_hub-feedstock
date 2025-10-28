@@ -44,7 +44,7 @@ requirements:
 test:
   imports:
     - huggingface_hub
-    - huggingface_hub.commands
+    - huggingface_hub.cli
   commands:
     - pip check
     - huggingface-cli --help
