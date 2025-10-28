@@ -47,8 +47,6 @@ test:
     - huggingface_hub.cli
   commands:
     - pip check
-    - huggingface-cli --help
-    - huggingface-cli env
     - hf --help
     - hf env
   requires:
