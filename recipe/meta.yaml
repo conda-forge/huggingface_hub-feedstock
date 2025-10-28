@@ -14,7 +14,6 @@ build:
   number: 0
   noarch: python
   entry_points:
-    - huggingface-cli=huggingface_hub.commands.huggingface_cli:main
     - hf=huggingface_hub.cli.hf:main
     # Note: This cannot be tested out of the box since it requires `mcp` and `typer` as
     # additional optional dependencies.
