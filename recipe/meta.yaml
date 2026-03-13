@@ -1,5 +1,5 @@
 {% set name = "huggingface_hub" %}
-{% set version = "1.7.0" %}
+{% set version = "1.7.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/huggingface_hub-{{ version }}.tar.gz
-  sha256: d6566dc88ee63cc23dbbc8f5c5e8d35e74d1833ca50e27efedbb5cf30ef485f1
+  sha256: be38fe66e9b03c027ad755cb9e4b87ff0303c98acf515b5d579690beb0bf3048
 
 build:
   number: 0
@@ -30,7 +30,7 @@ requirements:
     - httpx >=0.23.0,<1
     - shellingham
     - typer-slim
-    - hf-xet >=1.3.2,<2.0.0
+    - hf-xet >=1.4.2,<2.0.0
     - typing_extensions >=4.1.0
     - fsspec >=2023.5.0
     - filelock >=3.10.0
