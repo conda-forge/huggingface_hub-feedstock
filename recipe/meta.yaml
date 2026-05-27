@@ -1,5 +1,5 @@
 {% set name = "huggingface_hub" %}
-{% set version = "1.16.1" %}
+{% set version = "1.16.4" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/huggingface_hub-{{ version }}.tar.gz
-  sha256: 7f1dc4c5ec21aed69be630ad0c3378616be16f3de1a47b141c0e812965d9c832
+  sha256: 023bacd155f837d3fa56379ac8e23dababe6d6d87b04f8dacc258a44a38abe01
 
 build:
   number: 0
@@ -26,7 +26,8 @@ requirements:
     - python {{ python_min }}
     - setuptools
   run:
-    - typer >=0.20.0
+    - click >=8.4.0
+    - typer >=0.20.0,<0.26.0
     - httpx >=0.23.0,<1
     - hf-xet >=1.4.3,<2.0.0
     - typing_extensions >=4.1.0
