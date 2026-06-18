@@ -1,0 +1,71 @@
+schema_version: 1
+
+context:
+  version: "1.19.0"
+
+package:
+  name: huggingface_hub
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/h/huggingface_hub/huggingface_hub-${{ version }}.tar.gz
+  sha256: fd771622182d40977272a923953ee3b1b13538f9f8a7f5d78398f10af0f1c0bd
+
+build:
+  number: 0
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  python:
+    entry_points:
+      - hf=huggingface_hub.cli.hf:main
+      - huggingface-cli=huggingface_hub.cli.deprecated_cli:main
+      - tiny-agents=huggingface_hub.inference._mcp.cli:app
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - pip
+    - setuptools
+  run:
+    - python >=${{ python_min }}
+    - click >=8.4.0
+    - filelock >=3.10.0
+    - fsspec >=2023.5.0
+    - hf-xet >=1.5.1,<2.0.0
+    - httpx >=0.23.0,<1
+    - packaging >=20.9
+    - pyyaml >=5.1
+    - tqdm >=4.42.1
+    - typer >=0.20.0,<0.26.0
+    - typing_extensions >=4.1.0
+
+tests:
+  - python:
+      python_version:
+        - '*'
+        - ${{ python_min }}.*
+      pip_check: true
+      imports:
+        - huggingface_hub
+  - script:
+      - hf --help
+      - huggingface-cli --help
+      - tiny-agents --help
+
+about:
+  summary: Client library to download and publish models, datasets and other repos on the huggingface.co hub
+  license: Apache-2.0
+  license_file: LICENSE
+  homepage: https://github.com/huggingface/huggingface_hub
+
+extra:
+  recipe-maintainers:
+    - xhochy
+    - hanouticelina
+    - LysandreJik
+    - osanseviero
+    - Wauplin
+    - BastianZim
+    - sugatoray
+    - setu4993
+
