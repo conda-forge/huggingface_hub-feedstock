@@ -49,7 +49,6 @@ tests:
         - huggingface_hub
   - script:
       - hf --help
-      - huggingface-cli --help
       - tiny-agents --help
 
 about:
@@ -68,4 +67,3 @@ extra:
     - BastianZim
     - sugatoray
     - setu4993
-
