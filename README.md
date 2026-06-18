@@ -7,28 +7,7 @@ Home: https://github.com/huggingface/huggingface_hub
 
 Package license: Apache-2.0
 
-Summary: Client library to download and publish models on the huggingface.co hub
-
-Development: https://github.com/huggingface/huggingface_hub
-
-Documentation: https://huggingface.co/docs/huggingface_hub
-
-The `huggingface_hub` is a client library to interact with the Hugging Face Hub.
-The Hugging Face Hub is a platform with over 2M models, 500K datasets, and 200K
-demos in which people can easily collaborate in their ML workflows. The Hub works
-as a central place where anyone can share, explore, discover, and experiment with
-open-source Machine Learning.
-
-With `huggingface_hub`, you can easily download and upload models, extract useful
-information from the Hub, and do much more. Some example use cases:
-
-- Downloading and caching files from a Hub repository.
-- Creating repositories and uploading an updated model every few epochs.
-- Extract metadata from all models that match certain criteria (e.g. models for `text-classification`).
-- List all files from a specific repository.
-
-PyPI: [https://pypi.org/project/huggingface-hub/](https://pypi.org/project/huggingface-hub/)
-
+Summary: Client library to download and publish models, datasets and other repos on the huggingface.co hub
 
 Current build status
 ====================
@@ -172,4 +151,5 @@ Feedstock Maintainers
 * [@osanseviero](https://github.com/osanseviero/)
 * [@setu4993](https://github.com/setu4993/)
 * [@sugatoray](https://github.com/sugatoray/)
+* [@xhochy](https://github.com/xhochy/)
 
