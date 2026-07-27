@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "1.24.0"
+  version: "1.25.1"
 
 package:
   name: huggingface_hub
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/h/huggingface_hub/huggingface_hub-${{ version }}.tar.gz
-  sha256: 18431ff4daae0749aa9ba102fc952e314c98e1d30ebdec5319d85ca0a83e1ae5
+  sha256: 21129595ca7a753be479b319913e22cc8808361ac118bd76cc413db831b28a99
 
 build:
   number: 0
