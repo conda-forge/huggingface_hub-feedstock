@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "1.26.0"
+  version: 1.27.0
 
 package:
   name: huggingface_hub
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/h/huggingface_hub/huggingface_hub-${{ version }}.tar.gz
-  sha256: c8cd4e2df1ba9402f77fce9b509ec1d52debb502551789473f34016acc14e361
+  sha256: c1fed40ea82a6b41b477f5243546549b792ae0a93abcea608cff66089bf8f8df
 
 build:
   number: 0
@@ -31,7 +31,7 @@ requirements:
     - click >=8.4.2,<9.0.0
     - filelock >=3.10.0
     - fsspec >=2023.5.0
-    - hf-xet >=1.5.1,<2.0.0
+    - hf-xet >=1.5.2,<2.0.0
     - httpx >=0.23.0,<1
     - packaging >=20.9
     - pyyaml >=5.1
