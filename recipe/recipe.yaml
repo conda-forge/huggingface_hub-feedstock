@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "1.32.0"
+  version: 2.0.0
 
 package:
   name: huggingface_hub
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/h/huggingface_hub/huggingface_hub-${{ version }}.tar.gz
-  sha256: ed70a45498abe86039df7c2f4e5f7575de524be908d3840e8f828d5525eafd6a
+  sha256: 375e5ad35cb3505efbf19c0cdd7e3fbf1e2304b12cd0e6b7fc8d75c6f5484619
 
 build:
   number: 0
@@ -18,7 +18,6 @@ build:
   python:
     entry_points:
       - hf=huggingface_hub.cli.hf:main
-      - huggingface-cli=huggingface_hub.cli.deprecated_cli:main
       - tiny-agents=huggingface_hub.inference._mcp.cli:app
 
 requirements:
@@ -31,16 +30,17 @@ requirements:
     - click >=8.4.2,<9.0.0
     - filelock >=3.10.0
     - fsspec >=2023.5.0
-    - hf-xet >=1.5.2,<2.0.0
-    - httpx >=0.23.0,<1
+    - hf-xet >=1.6.0,<2.0.0
     - packaging >=20.9
     - pyyaml >=5.1
+    - tomli >=1.1.0
     - tqdm >=4.42.1
     - typing_extensions >=4.1.0
+    - httpx2 >=2.0.0,<3
 tests:
   - python:
       python_version:
-        - '*'
+        - "*"
         - ${{ python_min }}.*
       pip_check: true
       imports:
